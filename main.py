@@ -433,7 +433,7 @@ orb = pygame.transform.smoothscale(orb, (32, 32))
 trick = pygame.image.load((os.path.join("images", "obj-breakable.png")))
 trick = pygame.transform.smoothscale(trick, (32, 32))
 
-#  ints
+
 fill = 0
 num = 0
 CameraX = 0
@@ -442,7 +442,7 @@ coins = 0
 angle = 0
 level = 0
 
-# list
+
 particles = []
 orbs = []
 win_cubes = []
@@ -488,8 +488,7 @@ while not done:
     if keys[pygame.K_UP] or keys[pygame.K_SPACE]:
         player.isjump = True
 
-    # Reduce the alpha of all pixels on this surface each frame.
-    # Control the fade2 speed with the alpha value.
+
 
     alpha_surf.fill((255, 255, 255, 1), special_flags=pygame.BLEND_RGBA_MULT)
 
